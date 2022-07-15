@@ -5,26 +5,28 @@
     <parent>
         <artifactId>mb2g-mm-maven</artifactId>
         <groupId>guru.springframework</groupId>
-        <version>1.0-SNAPSHOT</version>
+        <version>${revision}</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>converters</artifactId>
 
     <properties>
-        <mapstruct.version>1.2.0.Final</mapstruct.version>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+        <mapstruct.version>1.5.2.Final</mapstruct.version>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>guru.springframework</groupId>
             <artifactId>jpa-entities</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>guru.springframework</groupId>
             <artifactId>web-api</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>org.mapstruct</groupId>
@@ -33,12 +35,13 @@
         </dependency>
     </dependencies>
 
+
     <build>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.0</version>
+                <version>3.8.1</version>
                 <configuration>
                     <annotationProcessorPaths>
                         <path>

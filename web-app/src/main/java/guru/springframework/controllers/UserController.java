@@ -12,7 +12,7 @@ public class UserController {
     User saveUser(UserCommand command) {
 
         // fake impl
-        return UserMapper.INSTANCE.userCommandToUser(command);
+        return UserMapper.INSTANCE.userCommandtoUser(command);
     }
 
 }
